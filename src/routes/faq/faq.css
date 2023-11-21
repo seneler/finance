@@ -1,0 +1,75 @@
+.questions-header {
+    margin: 20px 60px;
+}
+
+.questions-header h1 {
+    font-size: 3rem;
+    margin: 20px auto;
+}
+
+table.faqsQuestions {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+table.faqsQuestions td {
+    border: 1px solid black;
+    padding: 10px 0 30px 0;
+}
+
+table.faqsQuestions tr td {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+table.faqsQuestions tr td:first-child {
+    width: 40%;
+    font-weight: bold;
+}
+
+.CTA-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 60px;
+    width: 50%;
+}
+
+.CTA-content a {
+    background-color: var(--primary-font);
+    color: var(--primary-bg);
+    width: max-content;
+}
+
+.faqs-pic {
+    margin: 0 auto;
+    width: 80%;
+}
+/* ! Hover Effects */
+.CTA-content a {
+    transition: var(--hover-transition);
+}
+@media (hover: hover) {
+    .CTA-content a:hover {
+        transition: var(--hover-transition);
+        background-color: var(--primary-bg);
+        color: var(--primary-font);
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .faqsQuestions tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .faqsQuestions tr td,
+    table.faqsQuestions tr td:first-child {
+        width: 100%;
+    }
+    .CTA-content {
+        margin: 60px;
+        width: 80%;
+    }
+}
